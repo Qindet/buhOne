@@ -1,8 +1,103 @@
 @import "../../../../../gulp-start/node_modules/normalize.css/normalize.css";
 //@import "../../node_modules/slick-carousel/slick/slick";
 //@import "../../node_modules/magnific-popup/dist/magnific-popup";
-.cl {
-  &-s {
-    color: black
+.main {
+  width: 1920px;
+  height: 5130px;
+  background-color: grey;
+}
+
+.header {
+  &-logo {
+    display: flex;
+    img {
+      width: 40px;
+      height: 40px;
+      padding-top: 5px;
+    }
+    &__title {
+      font-family: Merriweather;
+      font-style: normal;
+      font-weight: 900;
+      font-size: 36px;
+      line-height: 50px;
+      color: #005FA3;
+      margin-left: 30px;
+    }
+
   }
+  &-top {
+    height: 110px;
+    background-color: white;
+    &__container {
+      margin: 0 20%;
+      display: flex;
+      padding-top: 20px;
+      height: 110px;
+    }
+    &__container-2 {
+    display: flex;
+      width: 100%;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-left: 25%;
+    }
+  }
+  &-info {
+    width: 100%;
+    display: flex;
+  justify-content: space-between;
+    &__number::before,&__time::before,&__letter::before,&__place::before{
+      content: url('../img/number.png');
+      width: 5px;
+
+      position: relative;
+      top: 5px;
+      left: -10px;
+    }
+    &__time::before{
+      content: url('../img/clock.png');
+      width: 5px;
+
+      position: relative;
+      top: 5px;
+      left: -10px;
+    }
+    &__letter::before{
+      content: url('../img/letter.png');
+      width: 5px;
+
+      position: relative;
+      top: 5px;
+      left: -10px;
+    }
+    &__place::before{
+      content: url('../img/placeholder.png');
+      width: 5px;
+
+      position: relative;
+      top: 5px;
+      left: -10px;
+    }
+  }
+  &-menu {
+    display: flex;
+    justify-content: space-between;
+  width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 110px;
+    list-style: none;
+    &__main,&__services,&__cases,&__about,&__contact {
+      height: 10px;
+      font-family: Lato;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 17px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+  }
+
 }
