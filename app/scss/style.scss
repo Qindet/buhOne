@@ -1,6 +1,12 @@
 @import "../../../../../gulp-start/node_modules/normalize.css/normalize.css";
 //@import "../../node_modules/slick-carousel/slick/slick";
 //@import "../../node_modules/magnific-popup/dist/magnific-popup";
+body {
+  margin: 0;
+}
+p {
+  margin: 0;
+}
 .main {
   width: 1920px;
   height: 5130px;
@@ -10,7 +16,7 @@
 .header {
   &-logo {
     display: flex;
-    img {
+    &__img {
       width: 40px;
       height: 40px;
       padding-top: 5px;
@@ -26,27 +32,32 @@
     }
 
   }
-  &-top {
+.container {
+  margin: 0 400px;
+  &__in {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 15%;
+  }
+}
+  &__top {
     height: 110px;
     background-color: white;
-    &__container {
-      margin: 0 20%;
-      display: flex;
-      padding-top: 20px;
-      height: 110px;
-    }
-    &__container-2 {
+  &-inner {
+  width: 1220px;
     display: flex;
-      width: 100%;
-      flex-direction: column;
-      justify-content: space-between;
-      margin-left: 25%;
-    }
+    padding-top: 20px;
+    height: 110px;
+  }
+
   }
   &-info {
     width: 100%;
     display: flex;
   justify-content: space-between;
+    margin-bottom: 20px;
     &__number::before,&__time::before,&__letter::before,&__place::before{
       content: url('../img/number.png');
       width: 5px;
@@ -88,8 +99,7 @@
     padding: 0;
     height: 110px;
     list-style: none;
-    &__main,&__services,&__cases,&__about,&__contact {
-      height: 10px;
+    &__link {
       font-family: Lato;
       font-style: normal;
       font-weight: bold;
@@ -97,7 +107,91 @@
       line-height: 17px;
       letter-spacing: 0.1em;
       text-transform: uppercase;
+      color:black;
+      text-decoration: none;
     }
   }
+  &__content {
+    &-next {
+      margin-top: 80px;
+      margin-left: 100px;
+      cursor: pointer;
+    }
+    &-bottom {
+      display: flex;
+      justify-content: space-between;
+    }
+    &-sl {
+      margin-top: 120px;
+    }
+    height: 670px;
+    background: url("../img/piter.jpg") no-repeat;
+    filter: brightness(0.5);
+    background-size: 2400px 670px;
+    &-button {
+      display: flex;
+    }
+  &-title{
+    font-family: Merriweather;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 66px;
 
+    color: #FFFFFF;
+  width: 570px;
+  }
+    &-inner {
+      padding-top: 180px;
+      padding-bottom: 100px;
+    }
+  }
+  &__main-button {
+    width: 270px;
+    height: 60px;
+    background-color: #005FA3;
+
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    border: none;
+    /* White */
+  cursor: pointer;
+    color: #FFFFFF;
+    margin-top: 70px;
+  }
+
+}
+.slider {
+  height: 10px;
+  display: flex;
+  width: 160px;
+  justify-content: space-between;
+  cursor: pointer;
+  &-buttons{
+    display: flex;
+    filter: contrast(100%);
+    &__left {
+      width: 60px;
+      height: 60px;
+      background: url("../img/slider__button-prev.png");
+    }
+    &__right {
+      width: 60px;
+      height: 60px;
+      background: url("../img/slider__button-next.png");
+    }
+  }
+  &__el {
+    width: 10px;
+    height: 10px;
+
+    background: url("../img/ellipse.png");
+    backdrop-filter: contrast(0%);
+    background-size: 10px 10px;
+    cursor: pointer;
+  }
 }
