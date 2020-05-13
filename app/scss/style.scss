@@ -146,24 +146,26 @@ p {
       padding-bottom: 100px;
     }
   }
-  &__main-button {
-    width: 270px;
-    height: 60px;
-    background-color: #005FA3;
 
-    font-family: Lato;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 25px;
-    text-align: center;
-    border: none;
-    /* White */
+
+}
+.main-btn {
+  width: 270px;
+  height: 60px;
+  background-color: #005FA3;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  border: none;
+  /* White */
   cursor: pointer;
-    color: #FFFFFF;
+  color: #FFFFFF;
+  &__top {
     margin-top: 70px;
   }
-
 }
 .slider {
   height: 10px;
