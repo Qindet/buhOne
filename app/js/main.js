@@ -1,3 +1,6 @@
-const test = 5
-const val = document.querySelector('.test')
-val.textContent='hi'
+$(document).ready(function () {
+    $('.slider').slick({
+        dots: true,
+        autoplay:true
+    })
+})
